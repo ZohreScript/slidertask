@@ -24,10 +24,10 @@ const Slider = () => {
       const slides = document.querySelectorAll(".swiper-slide");
       slides.forEach((slide, i) => {
         gsap.to(slide, {
-          autoAlpha: i === index ? 1 : 0.6,
-          scale: i === index ? 1 : 0.8,
-          duration: 0.3,
-          ease: "power3.inOut",
+          autoAlpha: i === index ? 1 : 0.4,
+          scale: i === index ? 1 : 0.6,
+          duration: 0.9,
+          ease: "power1.Out",
         });
       });
     };
@@ -69,7 +69,7 @@ const Slider = () => {
             breakpoints={{
               640: { slidesPerView: 1, spaceBetween: 10 },
               720:{slidesPerView: 2.6, spaceBetween: 5},
-              1024: { slidesPerView: 3, spaceBetween: 10 },
+              1024: { slidesPerView: 3, spaceBetween: 5 },
             }}
             className="w-full h-full"
           >
