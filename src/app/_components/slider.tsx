@@ -74,7 +74,7 @@ const Slider = () => {
           >
             {sliderData.map((slide, index) => (
               <SwiperSlide key={index} className="scale-105">
-               <div className="relative flex items-center justify-center w-96 h-96">
+               <div className="relative flex items-center justify-center w-96 h-80">
                   <Image
                     src={slide.image.src}
                     alt={`Slide ${index + 1}`}
@@ -107,30 +107,31 @@ const Slider = () => {
       </div>
 
       {/*  Buttons and Icons */}
-      <div className="flex flex-col items-center gap-y-2 text-center mt-12">
-        <div className="flex justify-center items-center gap-x-1 w-full flex-row-reverse">
-          {currentSlideData.buttons.length > 0 && (
-            <button className="relative px-6 pb-2 pt-1  rounded-md hover:text-white  bg-gray-200 text-blue-900 text-lg font-semibold text-center overflow-hidden group">
-              <span className="relative z-10">
-                {currentSlideData.buttons[0].text}
-              </span>
-              <span className="absolute inset-0 bg-blue-900  transition-transform transform scale-0 group-hover:scale-100 origin-center duration-300" />
-            </button>
-          )}
+      <div className="flex flex-col items-center gap-y-2 text-center mt-8">
+      <div className="flex justify-center items-center gap-x-1 w-full flex-row-reverse">
+  {currentSlideData.buttons.length > 0 && (
+    <button className="relative px-6 pb-2  rounded-md hover:text-white bg-gray-200 text-blue-900 text-lg font-semibold text-center overflow-hidden group">
+      <span className="w-0 h-full bg-blue-900 absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-out group-hover:w-full"></span>
+      <span className="relative z-10">
+        {currentSlideData.buttons[0].text}
+      </span>
+    </button>
+  )}
 
-          {currentSlideData.buttons.length > 1 && (
-            <div className="border-l-4 h-6 border-gray-300 mx-1"></div>
-          )}
+  {currentSlideData.buttons.length > 1 && (
+    <div className="border-l-4 h-6 border-gray-300 mx-1"></div>
+  )}
 
-          {currentSlideData.buttons.length > 1 && (
-            <button className="relative px-6 py-2 rounded-md bg-blue-600 text-white text-lg font-semibold text-center overflow-hidden group">
-              <span className="relative z-10">
-                {currentSlideData.buttons[1].text}
-              </span>
-              <span className="absolute inset-0 bg-blue-900 transition-transform transform scale-0 group-hover:scale-100 origin-center duration-300" />
-            </button>
-          )}
-        </div>
+  {currentSlideData.buttons.length > 1 && (
+    <button className="relative px-6 py-2 pt-0 rounded-md bg-blue-600 text-white text-lg font-semibold text-center overflow-hidden group">
+      <span className="w-0 h-full bg-blue-900 absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-out group-hover:w-full"></span>
+      <span className="relative z-10">
+        {currentSlideData.buttons[1].text}
+      </span>
+    </button>
+  )}
+</div>
+ 
 
         <div className="hidden md:flex justify-start gap-x-2 w-full my-8 ">
           {currentSlideData.icons.map((Icon, i) => (
