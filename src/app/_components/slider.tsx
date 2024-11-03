@@ -68,6 +68,7 @@ const Slider = () => {
             effect="slide"
             breakpoints={{
               640: { slidesPerView: 1, spaceBetween: 10 },
+              720:{slidesPerView: 2.6, spaceBetween: 5},
               1024: { slidesPerView: 3, spaceBetween: 10 },
             }}
             className="w-full h-full"
