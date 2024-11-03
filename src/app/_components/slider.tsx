@@ -108,7 +108,7 @@ const Slider = () => {
 
       {/*  Buttons and Icons */}
       <div className="flex flex-col items-center gap-y-2 text-center mt-8">
-      <div className="flex justify-center items-center gap-x-1 w-full flex-row-reverse">
+      <div className="flex flex-col md:flex-row-reverse  gap-y-2 justify-center items-center gap-x-1 w-full ">
   {currentSlideData.buttons.length > 0 && (
     <button className="relative px-6 pb-2  rounded-md hover:text-white bg-gray-200 text-blue-900 text-lg font-semibold text-center overflow-hidden group">
       <span className="w-0 h-full bg-blue-900 absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-out group-hover:w-full"></span>
@@ -119,7 +119,7 @@ const Slider = () => {
   )}
 
   {currentSlideData.buttons.length > 1 && (
-    <div className="border-l-4 h-6 border-gray-300 mx-1"></div>
+    <div className="border-l-4 h-6 hidden md:block  border-gray-300 mx-1"></div>
   )}
 
   {currentSlideData.buttons.length > 1 && (

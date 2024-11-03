@@ -9,7 +9,7 @@ const sliderData: SliderItem[] = [
     image: slide1,
     buttons: [
       { text: "ثبت سفارش" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaMoon, FaLaptop, FaCode], 
   },
@@ -24,7 +24,7 @@ const sliderData: SliderItem[] = [
     image: slide3,
     buttons: [
       { text: "مشاهده پروژه" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaLaptop],
   },
@@ -32,7 +32,7 @@ const sliderData: SliderItem[] = [
     image: slide4,
     buttons: [
       { text: "ثبت سفارش" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaMoon],
   },
@@ -40,7 +40,7 @@ const sliderData: SliderItem[] = [
     image: slide1,
     buttons: [
       { text: "ثبت سفارش" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaMoon, FaLaptop, FaCode], 
   },
@@ -55,7 +55,7 @@ const sliderData: SliderItem[] = [
     image: slide3,
     buttons: [
       { text: "مشاهده پروژه" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaLaptop],
   },
@@ -63,7 +63,7 @@ const sliderData: SliderItem[] = [
     image: slide4,
     buttons: [
       { text: "ثبت سفارش" },
-      { text: "دمو" },
+      { text: "مشاهده دمو" },
     ],
     icons: [FaMoon],
   },
